@@ -142,13 +142,17 @@ public class Paint extends JPanel {
 
 Board canvas = new Board();  // creating the canvas
 
-public Point startPoint, endPoint;
-    int x1,y1,x2,y2;
+public Point startPoint
+public Point endPoint;
+public int x1;
+public int y1;
+public int x2;
+public int y2;
     Shape[] shapes = new Shape[500]; // array that holds up to 500 shapes
     Line[] lines = new Line[500];
     
-    int shapeCount = 0;  // the actual number of shapes in the array
-    int lineCount = 0; // the actual number of lines in the array
+    public int shapeCount = 0;  // the actual number of shapes in the array
+    public int lineCount = 0; // the actual number of lines in the array
 
     Color shapeColor = Color.black;  // default shape color
      
